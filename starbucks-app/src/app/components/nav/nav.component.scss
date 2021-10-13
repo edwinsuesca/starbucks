@@ -1,0 +1,22 @@
+nav{
+    background-color: rgb(25, 42, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+
+    .boxLogo{
+        color: #fff16f;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        li{
+            a{
+                color:#fff16f;
+            }
+        }
+    }
+}
+
