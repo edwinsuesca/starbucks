@@ -1,1 +1,10 @@
-<p>nav works!</p>
+<nav>
+    <div class="boxLogo">
+        Logo
+    </div>
+    <ul>
+        <li *ngFor='let opcion of rutas'>
+            <a class={{opcion.clase}} routerLink={{opcion.routerLink}}>{{opcion.nombre}}</a>
+        </li>
+    </ul>
+</nav>

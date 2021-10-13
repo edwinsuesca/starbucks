@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  rutas = [
+    {nombre: 'Inicio', routerLink: '/inicio', clase: 'anchor'},
+    {nombre: 'Iniciar Sesión', routerLink: '/login', clase: 'anchor'}
+  ]
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 
