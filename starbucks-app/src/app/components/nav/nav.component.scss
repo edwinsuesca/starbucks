@@ -1,20 +1,31 @@
-nav{
-    background-color: rgb(25, 42, 73);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
+@import "../../../modulos_scss/colors";
+@import "../../../modulos_scss/elements";
+@import "../../../modulos_scss/fonts";
+@import "../../../modulos_scss/media";
+@import "../../../modulos_scss/mixin";
 
+nav{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: $colorGray3;
+    @include flexAj(center, space-between);
     .boxLogo{
-        color: #fff16f;
+        color: $colorGray5;
+        font-size: $fontSize1;
     }
     ul{
-        display: flex;
-        justify-content: center;
-        gap: 15px;
+        @include flexAj(center, center);
+        gap: 20px;
         li{
             a{
-                color:#fff16f;
+                font-size: $fontSize1;
+                color: $color1;
+            }
+        }
+
+        li:hover{
+            a{
+                color: $colorGray5;
             }
         }
     }
